@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="0px"
+		android:layout_weight="0.06">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="Accelerometer Cutoff:"
+				android:id="@+id/AccelerometerCutoff"/>
+
+		</LinearLayout>
+
+		<SeekBar
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/accelerometerCutoffValue"
+			android:max="100"
+			android:indeterminate="false"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="0px"
+		android:layout_weight="0.07">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="Accelerometer Strength"
+			android:id="@+id/textView2"/>
+
+		<SeekBar
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/strengthSeekbar"
+			android:max="5"
+			android:indeterminate="false"/>
+	</LinearLayout>
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="0px"
+		android:layout_weight="0.09">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Updating:"
+					android:id="@+id/textView3"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="true"
+					android:id="@+id/areValuesUpdating"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="X Value"
+					android:id="@+id/textView"/>
+
+				<Space
+					android:layout_width="30dp"
+					android:layout_height="20px"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="X Value"
+					android:id="@+id/xMagnitude"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Y Value"
+					android:id="@+id/textView8"/>
+
+				<Space
+					android:layout_width="30dp"
+					android:layout_height="20px"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Y Value"
+					android:id="@+id/yMagnitude"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:visibility="gone">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Z Value"
+					android:id="@+id/textView6"/>
+
+				<Space
+					android:layout_width="30dp"
+					android:layout_height="20px"
+					/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Z Value"
+					android:id="@+id/zMagnitude"/>
+			</LinearLayout>
+		</LinearLayout>
+
+		<Button
+			android:layout_width="151dp"
+			android:layout_height="wrap_content"
+			android:text="Save &amp; Return"
+			android:id="@+id/saveButton"
+			android:layout_gravity="right|bottom"/>
+
+	</FrameLayout>
+
+	<com.andrew.wallscraper.MyGLSurfaceView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:id="@+id/renderView"
+		android:layout_gravity="center|bottom"
+		android:layout_weight="0.15"/>
+</LinearLayout>

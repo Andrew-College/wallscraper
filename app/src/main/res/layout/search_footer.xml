@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/SearchLayout"
+	>
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_alignParentLeft="false"
+		android:layout_alignParentStart="true"
+		android:id="@+id/SearchOptions"
+		android:layout_alignParentBottom="false">
+
+		<TextView
+			android:id="@+id/NewSearch"
+			android:layout_width="0px"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:text="Search"
+			android:gravity="center_vertical|center_horizontal"
+			android:textSize="25dp"
+			android:background="@drawable/back"
+			android:textStyle="bold"
+			android:textColor="#ffc5c5c5"
+			android:textAlignment="center"
+			/>
+
+		<TextView
+			android:id="@+id/RandomSearch"
+			android:layout_width="0px"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:text="Random"
+			android:textSize="28dp"
+			android:background="@drawable/back"
+			android:textStyle="bold"
+			android:textColor="#ffc5c5c5"
+			android:gravity="center_vertical|center_horizontal"/>
+
+		<TextView
+			android:id="@+id/ResetSearch"
+			android:layout_width="0px"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:text="Reset"
+			android:textSize="25dp"
+			android:background="@drawable/back"
+			android:textStyle="bold"
+			android:textColor="#ffc5c5c5"
+			android:gravity="center_vertical|center_horizontal"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/SearchOptions"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:background="@drawable/searchback"
+		android:id="@+id/SearchText"
+		android:visibility="gone"
+		android:gravity="bottom">
+
+		<EditText
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/SearchTextArea"
+			android:textColor="#ffffffff"
+			android:hint="Type Search Here"
+			android:textColorHint="#ffffffff"
+			android:visibility="visible"
+			android:editable="true"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/SearchText"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="false"
+			android:layout_alignParentEnd="false">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/sfw_area"
+				android:layout_weight="1">
+
+				<CheckBox
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/sfw"
+					android:layout_alignParentTop="false"
+					android:layout_alignParentLeft="false"
+					android:layout_alignParentStart="true"
+					android:gravity="bottom"
+					android:layout_alignParentBottom="true"
+					android:checked="true"
+					android:layout_gravity="center"
+					android:enabled="false"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="SFW"
+					android:id="@+id/SFW_Text"
+					android:layout_gravity="center|bottom"
+					android:inputType="none"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/sketchy_area"
+				android:layout_weight="1">
+
+				<CheckBox
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/sketchy"
+					android:layout_alignParentTop="false"
+					android:layout_alignParentLeft="false"
+					android:layout_alignParentStart="true"
+					android:gravity="bottom"
+					android:layout_alignParentBottom="true"
+					android:checked="true"
+					android:layout_gravity="center"
+					android:enabled="false"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Sketchy"
+					android:id="@+id/Sketchy_Text"
+					android:layout_gravity="center|bottom"
+					android:inputType="none"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/General_area"
+				android:layout_weight="1">
+
+				<CheckBox
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/general"
+					android:layout_alignParentTop="false"
+					android:layout_alignParentLeft="false"
+					android:layout_alignParentStart="true"
+					android:gravity="bottom"
+					android:layout_alignParentBottom="true"
+					android:checked="true"
+					android:layout_gravity="center"
+					android:enabled="false"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="General"
+					android:id="@+id/General_Text"
+					android:layout_gravity="center|bottom"
+					android:inputType="none"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/Anime_area"
+				android:layout_weight="1">
+
+				<CheckBox
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/anime"
+					android:layout_alignParentTop="false"
+					android:layout_alignParentLeft="false"
+					android:layout_alignParentStart="true"
+					android:gravity="bottom"
+					android:layout_alignParentBottom="true"
+					android:checked="true"
+					android:layout_gravity="center"
+					android:enabled="false"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Anime"
+					android:id="@+id/Anime_Text"
+					android:layout_gravity="center|bottom"
+					android:inputType="none"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/People_area"
+				android:layout_weight="1">
+
+				<CheckBox
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/people"
+					android:layout_alignParentTop="false"
+					android:layout_alignParentLeft="false"
+					android:layout_alignParentStart="true"
+					android:gravity="bottom"
+					android:layout_alignParentBottom="true"
+					android:checked="true"
+					android:layout_gravity="center"
+					android:enabled="false"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="People"
+					android:id="@+id/People_Text"
+					android:layout_gravity="center|bottom"
+					android:inputType="none"/>
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/SearchText"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:background="@drawable/searchback"
+		android:id="@+id/Accelerometer"
+		android:gravity="bottom">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:measureWithLargestChild="false"
+			android:gravity="center_vertical">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0px"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:id="@+id/EnableDisableAccelerometer"
+				android:gravity="center_vertical|center_horizontal">
+
+				<CheckBox
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:text="Enable/Disable Accelerometer"
+					android:gravity="center_horizontal"
+					android:checked="false"
+					android:id="@+id/accelerometerChecker"
+					android:enabled="true"/>
+			</LinearLayout>
+
+			<Button
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="0px"
+				android:layout_height="wrap_content"
+				android:text="Configure"
+				android:id="@+id/accelerometerConfigure"
+				android:layout_weight="1"
+				android:gravity="center_vertical|center_horizontal"/>
+		</LinearLayout>
+	</LinearLayout>
+
+</RelativeLayout>

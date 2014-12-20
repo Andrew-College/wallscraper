@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Andrew_Sansom_D00133579_WallHaven-Matic</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="default_image_name">Image Name</string>
+
+
+	<string name="GENERAL">100</string>
+	<string name="ANIME">10</string>
+	<string name="PEOPLE">1</string>
+	<string name="SFW">100</string>
+	<string name="SKETCHY">10</string>
+
+	<string-array name="RESOLUTIONS">
+		<item>1024x768</item>
+		<item>1280x800</item>
+		<item>1366x768</item>
+		<item>1280x960</item>
+		<item>1440x900</item>
+		<item>1600x900</item>
+		<item>1280x1024</item>
+		<item>1600x1200</item>
+		<item>1680x1050</item>
+		<item>1920x1080</item>
+		<item>1920x1200</item>
+		<item>2560x1440</item>
+		<item>2560x1600</item>
+		<item>3840x1080</item>
+		<item>5760x1080</item>
+		<item>3840x2160</item>
+	</string-array>
+
+	<string-array name="RATIOS">
+		<item>4x3</item>
+		<item>5x4</item>
+		<item>16x9</item>
+		<item>32x9</item>
+		<item>48x9</item>
+	</string-array>
+</resources>
